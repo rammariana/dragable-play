@@ -5,6 +5,7 @@
   </nav>
   <router-view/>
   <h1>hola</h1>
+  <p>hola</p>
 </template>
 
 <style lang="scss">
