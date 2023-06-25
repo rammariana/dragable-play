@@ -5,13 +5,21 @@ import PlayView from "../views/PlayView.vue";
 const routes = [
   {
     path: "/",
-    name: "home",
-    component: HomeView,
+    redirect: () => {
+      return {
+        name: "home",
+      };
+    },
   },
   {
     path: "/game",
     name: "game",
     component: PlayView,
+  },
+  {
+    path: "/home",
+    name: "home",
+    component: HomeView,
   },
 ];
 
